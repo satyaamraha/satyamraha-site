@@ -10,7 +10,7 @@ Theme: *"Where Ancient Wisdom meets Modern Logic"* — midnight indigo + temple 
 | `about.html` | Story, journey timeline, qualifications, Vedic training |
 | `vision.html` | Vision, mission, the school, the fusion approach |
 | `projects.html` | Griha Vastu, Numerology app, AI/DS, IoT, game, comp-programming |
-| `business.html` | Satyam Raha brand + Griha Vastu (users & consultants) + consulting |
+| `ventures.html` | Satyam Raha brand + Griha Vastu (users & consultants) + consulting |
 | `media.html` | Video grid (placeholders — drop in real YouTube links) |
 | `contact.html` | Contact form (opens email) + direct details |
 | `404.html` | Not-found page |
