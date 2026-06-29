@@ -1,0 +1,12 @@
+# Caddy config for serving the static site on Railway.
+# Railway sets $PORT; Caddy listens on it and serves ./ as the web root.
+:{$PORT:8080} {
+	root * .
+	file_server
+	encode gzip zstd
+	try_files {path} {path}.html /404.html
+	header {
+		# Light caching for assets
+		Cache-Control "public, max-age=3600"
+	}
+}
