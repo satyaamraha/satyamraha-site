@@ -137,6 +137,10 @@ h2.section-title { font-size: clamp(2rem, 4.5vw, 3.2rem); margin: 14px 0 16px; }
 .nav-links a:hover { color: var(--t-light); }
 .nav-links a.active { color: var(--gold); }
 .nav-cta { margin-left: 8px; }
+/* Keep the gold "Connect" button's text dark & readable — beats the muted
+   `.nav-links a` color which would otherwise win on specificity. */
+.nav-links a.nav-cta { color: #2a1d05; font-weight: 700; }
+.nav-links a.nav-cta:hover { color: #2a1d05; }
 .nav-toggle { display: none; background: none; border: 0; cursor: pointer; flex-direction: column; gap: 5px; }
 .nav-toggle span { width: 24px; height: 2px; background: var(--gold); transition: .3s; }
 
