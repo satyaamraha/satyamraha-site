@@ -162,7 +162,26 @@ h2.section-title { font-size: clamp(2rem, 4.5vw, 3.2rem); margin: 14px 0 16px; }
 .hero-stats .stat span { font-size: .8rem; color: var(--t-dim); letter-spacing: .04em; }
 
 /* Portrait with mandala ring */
-.portrait { position: relative; justify-self: center; }
+.portrait {
+  position: relative; justify-self: center; align-self: stretch;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 26px;
+}
+.portrait-figure { position: relative; }
+
+/* "At a glance" glass card that fills the space above the portrait */
+.hero-card {
+  width: min(380px, 82vw);
+  background: linear-gradient(160deg, rgba(27,23,64,.72), rgba(18,16,42,.6));
+  border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 18px 22px; box-shadow: var(--shadow); backdrop-filter: blur(8px);
+}
+.hero-card-eyebrow {
+  font-size: .68rem; letter-spacing: .24em; text-transform: uppercase;
+  color: var(--gold); font-weight: 600;
+}
+.hero-card ul { margin-top: 12px; display: flex; flex-direction: column; gap: 9px; }
+.hero-card li { font-size: .93rem; color: var(--t-light); line-height: 1.4; }
+.hero-card li b { color: var(--gold); font-weight: 600; }
 .portrait-ring {
   position: relative; width: min(380px, 78vw); aspect-ratio: 1;
   border-radius: 50%; padding: 14px;
